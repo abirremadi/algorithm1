@@ -1,0 +1,30 @@
+ALGORITHM checkpoint-algo1
+VAR
+sentence:STRING;
+i,j,k:INTEGER;
+BEGIN
+    Write("write your sentence")
+    Read (sentence);
+    i:=0;
+    j:=0;
+    k:0;
+    FOR  n from 0 to sentence.length Step1 Do
+    if (sentence[n]="a") or (sentence[n]="e") or (sentence [n]="i") or (sentence [n]="o") or (sentence [n]="y") then 
+    i:i+1;
+    end_if
+    if (sentence [n]=" ") then
+    j:j+1;
+    end_if
+    if (sentence[n]<>".") then 
+    k:k+1;
+    else 
+    Break ;
+    end_For
+    write ("number of vowels ");
+    write(i);
+    write ("number of words");
+    write(j);
+    write ("lengthof sentence")
+    wrie (k);
+
+END
